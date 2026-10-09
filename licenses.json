@@ -1,0 +1,10 @@
+{
+  "active": true,
+  "notice": "LogiTycoon Autopilot Authorization Server",
+  "updated_at": "2026-10-09",
+  "allowed": [
+    "5c653d2e98917da85b126bb789696a18c526664beba1cb2f4fb93f42dfc4cd96",
+    "bca3124e58abc555cdf023d78ce519498a07f301dcb15a45bdc07b98e7a14e1d",
+    "014f8fd8ca622c206e827780519e92491eed580f6fac8a2edbd63c62c441bab5"
+  ]
+}
