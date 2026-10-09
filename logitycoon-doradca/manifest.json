@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "LogiTycoon Doradca & Autopilot",
+  "version": "3.6",
+  "description": "Samodzielne prowadzenie firmy w LogiTycoon 24/7: ładunki, paliwo, sen, naprawy, opony, media i plan inwestycji na danych z gry.",
+  "permissions": ["storage", "notifications", "alarms"],
+  "host_permissions": ["*://*.logitycoon.com/*", "*://logitycoon.com/*"],
+  "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.logitycoon.com/*", "*://logitycoon.com/*"],
+      "js": ["content.js"],
+      "css": ["panel.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
